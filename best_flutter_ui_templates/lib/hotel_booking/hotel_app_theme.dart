@@ -1,4 +1,4 @@
-import 'package:best_flutter_ui_templates/main.dart';
+import 'package:best_flutter_ui_templates/main.dart' show HexColor;
 import 'package:flutter/material.dart';
 
 class HotelAppTheme {
@@ -36,14 +36,13 @@ class HotelAppTheme {
       splashFactory: InkRipple.splashFactory,
       canvasColor: Colors.white,
       scaffoldBackgroundColor: const Color(0xFFF6F6F6),
-      errorColor: const Color(0xFFB00020),
       buttonTheme: ButtonThemeData(
         colorScheme: colorScheme,
         textTheme: ButtonTextTheme.primary,
       ),
       textTheme: _buildTextTheme(base.textTheme),
       primaryTextTheme: _buildTextTheme(base.primaryTextTheme),
-      platform: TargetPlatform.iOS, colorScheme: colorScheme.copyWith(background: const Color(0xFFFFFFFF)),
+      platform: TargetPlatform.iOS, colorScheme: colorScheme.copyWith(surface: const Color(0xFFFFFFFF)).copyWith(error: const Color(0xFFB00020)),
     );
   }
 }
