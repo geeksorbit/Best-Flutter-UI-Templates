@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:io' show Platform;
 import 'package:best_flutter_ui_templates/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
